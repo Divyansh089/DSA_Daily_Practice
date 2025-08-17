@@ -13,12 +13,7 @@ public class operation {
     }
     static class BinaryTree{
         static int idx = -1;
-        private static void Build(Node root){
-            if(Node [idx] == null){
-                return 0;
-            }
 
-        }
     }
 
 }
