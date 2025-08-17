@@ -37,7 +37,7 @@ package Assignments_Tree.BST;
 import java.util.Scanner;
 
 class Main {
-    static class BinaryTree {
+    static class Tree {
 
         private class Node {
             int data;
@@ -62,7 +62,7 @@ class Main {
             return this.size == 0;
         }
 
-        public BinaryTree() {
+        public Tree() {
             Scanner scn = new Scanner(System.in);
             this.root = this.takeinput(scn, null, false);
         }
@@ -121,7 +121,7 @@ class Main {
 
         /////////////////// New Constructor//////////
 
-        public BinaryTree(int[] pre, int[] in) {
+        public Tree(int[] pre, int[] in) {
             // this.root = this.construct(pre, 0, pre.length - 1, in, 0, in.length -
             // 1);//for preorder
             this.root = this.construct(pre, in, 0, in.length - 1);// for
@@ -231,7 +231,7 @@ class Main {
             in[i] = scn.nextInt();
         }
 
-        BinaryTree bt = new BinaryTree(pre, in);
+        Tree bt = new Tree(pre, in);
 //		bt.display();
         System.out.println(bt.largestBSTinBT());
     }
