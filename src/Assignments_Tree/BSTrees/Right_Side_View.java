@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //Given a binary tree, Print its right side view ordered from top to bottom.
 //Right Side view is defined as nodes that are visible from right side of the tree ie. to a person standing to the right of the tree,only these nodes are visible.
 //

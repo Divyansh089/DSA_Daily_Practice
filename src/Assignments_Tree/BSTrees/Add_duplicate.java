@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //For each node in a binary search tree, create a new duplicate node, and insert the duplicate as the left child of the original node.
 //
 //

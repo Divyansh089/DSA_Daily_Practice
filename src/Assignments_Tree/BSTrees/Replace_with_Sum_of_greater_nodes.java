@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //Given a binary search tree, replace each nodes' data with the sum of all nodes' which are greater or equal than it. Include the current node's data also.
 //
 //

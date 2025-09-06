@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //Create Tree (Using Postorder and Inorder)
 
 //Given postorder and inorder traversal of a tree. Create the original tree on given information.

@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //Given a binary tree , print its nodes from root to bottom as visible from left side of tree
 //
 //

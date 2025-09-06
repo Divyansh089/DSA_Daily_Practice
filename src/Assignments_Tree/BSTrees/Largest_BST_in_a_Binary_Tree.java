@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //Given a Binary Tree, write a program that returns the size of the largest subtree which is also a Binary Search Tree (BST)
 //
 //

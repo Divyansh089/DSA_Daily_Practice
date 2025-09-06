@@ -1,4 +1,4 @@
-package Assignments_Tree.BST;
+package Assignments_Tree.BSTrees;
 //Replace each node with the sum of all greater nodes in a given BST
 //
 //
