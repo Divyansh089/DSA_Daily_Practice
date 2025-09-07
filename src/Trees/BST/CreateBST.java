@@ -1,5 +1,8 @@
 package Trees.BST;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class CreateBST {
     static class Node{
         int data;
@@ -68,6 +71,37 @@ public class CreateBST {
         }
         return root;
     }
+    public static void printInRange(Node root , int  x, int y){
+        if(root == null) return;
+        if(root.data >=x && root.data <= y){
+            printInRange(root.left , x , y);
+            System.out.println(root.data + " ");
+            printInRange(root.right , x, y);
+        }else if(root.data <= y){
+            printInRange(root.left  , x, y);
+        }else{
+            printInRange(root.right , x, y);
+        }
+
+    }
+
+    public static void paths(Node root , ArrayList<Integer> ans){
+        if(root == null) return;
+        ans.add(root.data);
+        if(root.left == null && root.right == null){
+            printPath(ans);
+        }else{
+            paths(root.left , ans);
+            paths(root.right , ans);
+        }
+        ans.remove(ans.size() - 1);
+    }
+    public static void printPath(ArrayList<Integer> ans){
+        for(int i = 0;i<ans.size();i++){
+            System.out.print(ans.get(i) + "->");
+        }
+        System.out.println();
+    }
 
     public static void inorder(Node root){
         if(root == null) return;
@@ -81,9 +115,11 @@ public class CreateBST {
         for(int i = 0;i< values.length;i++){
             root = insert(root , values[i]);
         }
-        inorder(root);
-        System.out.println(search(root , 3));
-        delete(root , 5);
-        inorder(root);
+//        inorder(root);
+//        System.out.println(search(root , 3));
+//        delete(root , 5);
+//        inorder(root);
+        printInRange(root , 2, 7);
+        paths(root , new ArrayList<>());
     }
 }
