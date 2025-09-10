@@ -15,9 +15,8 @@ public class leaf {
         int values[] = { 5 , 1 , 3, 4, 2, 7};
 
     }
-    public static Node insert(int val){
-        if(val == null) return ;
-        if(root.val >)
+
+    public static void paths(Node root){
+
     }
-    public static void paths(Node root)
 }
