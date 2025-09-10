@@ -35,7 +35,7 @@ public class CreateBST {
         }else if(root.data == val){
             return true;
         }else{
-            return search(root.right , val);
+            return search(root.right, val);
         }
 
 
