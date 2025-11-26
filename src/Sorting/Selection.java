@@ -15,12 +15,12 @@ public class Selection {
         }
     }
     public static int min(int [] arr  , int i ){
-        int idx = i;
-        for(int j = idx + 1;j<arr.length;j++){
-            if(arr[j] < arr[idx]){
-                idx = j;
+
+        for(int j = i + 1;j<arr.length;j++){
+            if(arr[j] < arr[i]){
+                i = j;
             }
         }
-        return idx;
+        return i;
     }
 }
