@@ -1,0 +1,14 @@
+                                                        Hashing
+
+
+
+how to calculate hashCode():
+    public int hashCode() {
+        int h = 0;
+        for (char c : value) {
+            h = 31 * h + c;
+        }
+        return h;
+    }
+=> why 31?
+->  31 is used because it’s a small prime that spreads keys well to reduce collisions, and it can be computed fast using (h << 5) - h.
